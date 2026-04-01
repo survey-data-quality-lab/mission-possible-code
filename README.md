@@ -33,6 +33,10 @@ An example .xlsx file and .qsf file are provided for testing.
 
 ## Workflow
 
+### Step 0 — Download or clone the repository
+
+Download or clone this repository to your computer, then open the project folder locally.
+
 ### Step 1 — Download files from Qualtrics
 
 1. Export survey responses as an **Excel (.xlsx)** file (use **Export Labels**), and place it in `data raw/`.
