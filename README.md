@@ -69,18 +69,18 @@ Then run the script. It calls `qsf_extract.R` automatically and writes the follo
 
 ### Step 3 — Run the main cleaning script
 
-The STATA and R scripts produce identical outputs. Open the chosen script and update plus verify the settings at the top (section 0):
+The R and STATA scripts produce identical outputs. Open the chosen script and update plus verify the settings at the top (section 0):
 
-**Option 3A — STATA (`main.do`)**
+**Option 3A — R (`main.R`)**
+
+- If run in the same session as `clean_tracker.R`, the working directory and `input_raw` path are inherited automatically.
+- Settings [3] to [5]                                 **[VERIFY]**
+
+**Option 3B — STATA (`main.do`)**
 
 - `cd` — path to the project root                    **[UPDATE]**
 - `input_raw` — path to the raw Excel export         **[UPDATE]**
 - Settings [3] to [5]                                **[VERIFY]**
-
-**Option 3B — R (`main.R`)**
-
-- If run in the same session as `clean_tracker.R`, the working directory and `input_raw` path are inherited automatically.
-- Settings [3] to [5]                                 **[VERIFY]**
 
 Either script imports the raw survey data, merges `tracker.xlsx`, applies exclusion criteria and data quality flags, and writes the following outputs:
 
