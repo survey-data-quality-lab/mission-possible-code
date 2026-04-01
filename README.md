@@ -1,8 +1,16 @@
 # Mission Possible: Clean Data Quality Trackers
 
-This repository constructs data quality metrics from raw Qualtrics survey exports. It cleans two types of tracking data: a **general tracker** at the page-level and **keystroke trackers** for open-text responses. The tracking data are then merged with the survey responses, and used to define five main data quality flags. The scripts export analysis-ready datasets, participant ID lists for the two-stage procedure, and a plain-text data quality report.
+This repository constructs data quality metrics from raw Qualtrics survey exports. 
 
-The default values are set to work with our Mission_Possible_Survey_V1.qsf Qualtrics file. You can adapt it to your own Qualtrics survey by following the instructions below. 
+It cleans two types of tracking data: a **general tracker** at the page-level and **keystroke trackers** for open-text responses. The tracking data are then merged with the survey responses, and used to define five main data quality flags. The scripts export analysis-ready datasets, participant ID lists for the two-stage procedure, and a plain-text data quality report.
+
+The default values are set to work with our Mission_Possible_Survey_V1.qsf survey. A corresponding example .xlsx file and .qsf file are provided for testing.
+
+You can adapt it to your own Qualtrics survey by following the instructions below. 
+
+See https://github.com/survey-data-quality-lab/mission-possible for the main repository.
+
+**Requirements:** R ≥ 4.0 · Stata ≥ 14 (if using the Stata scripts)
 
 ---
 
@@ -15,8 +23,6 @@ code/                              ← scripts listed below
 data/                              ← cleaned datasets (written by scripts)
 output/                            ← reports, codebook, ID lists (written by scripts)
 ```
-
-An example .xlsx file and .qsf file are provided for testing.
 
 ---
 
