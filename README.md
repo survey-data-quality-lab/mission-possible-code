@@ -50,7 +50,7 @@ Download or clone this repository to your computer, then open the project folder
 
 Note: make sure to export these two files at about the same time so there are no inconsistencies. 
 
-### Step 2 — Run the R tracker script
+### Step 2 — Run the R clean tracker script
 
 Open `clean_tracker.R` and update the required settings at the top (section 0):
 
