@@ -24,8 +24,8 @@ An example .xlsx file and .qsf file are provided for testing.
 
 | File | Role |
 |---|---|
-| `clean_tracker.R` | Parses tracker JSON and key log data; writes `tracker.xlsx` |
-| `qsf_extract.R` | Extracts question (QID) to label mapping from the `.qsf` file; runs as part of `clean_tracker.R` |
+| `clean_tracker.R` | Parses tracker JSON and key log JSON; writes `tracker.xlsx` |
+| `qsf_extract.R` | Extracts survey questions (QID) and export labels from the `.qsf` file; runs as part of `clean_tracker.R` |
 | `main.do` / `main.R` | Main cleaning script (Stata / R); merges tracker output, defines data quality checks, and writes all outputs including the data quality report |
 | `data_quality_report.do` / `data_quality_report.R` | Standalone script (Stata / R) to regenerate the data quality report from `all.dta` / `all.RData` |
 
