@@ -4,11 +4,11 @@ This repository constructs data quality metrics from raw Qualtrics survey export
 
 It cleans two types of tracking data: a **general tracker** at the page-level and **keystroke trackers** for open-text responses. The tracking data are then merged with the survey responses, and used to define five main data quality flags. The scripts export analysis-ready datasets, participant ID lists for the two-stage procedure, and a plain-text data quality report.
 
-The default values are set to work with our Mission_Possible_Survey_V1.qsf survey. A corresponding example .xlsx file and .qsf file are provided for testing.
+The default values are set to work with our Mission_Possible_Survey_V1.qsf survey. For testing, an example .xlsx file and .qsf file are provided.
 
 You can adapt it to your own Qualtrics survey by following the instructions below. 
 
-See https://github.com/survey-data-quality-lab/mission-possible for the main repository.
+See https://github.com/survey-data-quality-lab/mission-possible for more information. 
 
 **Requirements:** R ≥ 4.0 · Stata ≥ 14 (if using the Stata scripts)
 
@@ -108,4 +108,3 @@ Either script imports the raw survey data, merges `tracker.xlsx`, applies exclus
 - The R and Stata scripts both read from the same raw Excel file and produce matching outputs.
 - `tracker.xlsx` must exist before running `main.do` or `main.R`. Always run `clean_tracker.R` first.
 - Typing-based checks (speed, paste, input jump) operate on the `key_log` column, which corresponds to the main open-text response. Multiple key log trackers can be processed simultaneously by adding entries to the `keylogs` list in `clean_tracker.R` section 0. But only `key_log` is used for constructing our main data quality checks in `main.do` and `main.R`.
-- The data quality report scripts (`data_quality_report.R` / `.do`) can also be run standalone after the main script has completed once.
