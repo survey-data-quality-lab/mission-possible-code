@@ -16,6 +16,8 @@ data/                              ← cleaned datasets (written by scripts)
 output/                            ← reports, codebook, ID lists (written by scripts)
 ```
 
+An example .xlsx file and .qsf file are provided for testing.
+
 ---
 
 ## Scripts
@@ -42,9 +44,9 @@ Note: make sure to export these two files at about the same time so there are no
 
 Open `clean_tracker.R` and update the required settings at the top (section 0):
 
-- `setwd(...)` — path to the project root       **[UPDATE]**
-- `input_raw` — path to the raw Excel export    **[UPDATE]**
-- `qsf_path` — path to the `.qsf` file          **[UPDATE]**
+- `setwd(...)` — path to the project root         **[UPDATE]**
+- `input_raw` — path to the raw Excel export      **[UPDATE]**
+- `qsf_path` — path to the `.qsf` file            **[UPDATE]**
 
 Then run the script. It calls `qsf_extract.R` automatically and writes the following outputs:
 
@@ -61,9 +63,9 @@ The STATA and R scripts produce identical outputs. Open the chosen script and up
 
 **Option 3A — STATA (`main.do`)**
 
-- `cd` — path to the project root            **[UPDATE]**
-- `input_raw` — path to the raw Excel export **[UPDATE]**
-- Settings [3] to [5]                                 **[VERIFY]**
+- `cd` — path to the project root                    **[UPDATE]**
+- `input_raw` — path to the raw Excel export         **[UPDATE]**
+- Settings [3] to [5]                                **[VERIFY]**
 
 **Option 3B — R (`main.R`)**
 
