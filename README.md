@@ -2,9 +2,9 @@
 
 This repository constructs data quality metrics from raw Qualtrics survey exports. 
 
-It cleans two types of tracking data: a **general tracker** at the page-level and **keystroke trackers** for open-text responses. The tracking data are then merged with the survey responses, and used to define five main data quality flags. The scripts export analysis-ready datasets, participant ID lists for the two-stage procedure, and a plain-text data quality report.
+The tracking data is cleaned, merged with the survey responses, and used to define five main data quality flags. The scripts export analysis-ready datasets, participant ID lists for the two-stage procedure, and a plain-text data quality report.
 
-The default values are set to work with our Mission_Possible_Survey_V1.qsf survey. For testing, an example .xlsx file and .qsf file are provided.
+The default values are set to work with our [Mission_Possible_Survey_V1.qsf]([qualtrics survey file/Mission_Possible_Survey_V1.qsf](https://github.com/survey-data-quality-lab/mission-possible/tree/03819bb4e7fdb9259a7d82d04e53e38ecc55b209/qualtrics%20survey%20file)) survey. For testing, an example .xlsx file and .qsf file are provided.
 
 You can adapt it to your own Qualtrics survey by following the instructions below. 
 
